@@ -162,10 +162,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="simple-section simple-section-muted" id="testimonials" aria-labelledby="testimonials-title">
-        <p className="eyebrow"><span /> CLIENT FEEDBACK</p><h2 id="testimonials-title">Kind words<span>.</span></h2>
-        <p className="simple-lead">Real client testimonials will be featured here once you provide the approved feedback and client names.</p>
-        <p className="section-note">No testimonials or client endorsements have been invented.</p>
+      <section className="testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+        <div className="testimonials-heading">
+          <p className="eyebrow"><span /> CLIENT FEEDBACK</p>
+          <h2 id="testimonials-title">The best part is<br /><em>what comes next.</em></h2>
+        </div>
+        <div className="testimonial-placeholder">
+          <span className="quote-mark" aria-hidden="true">“</span>
+          <p>Client feedback will appear here.</p>
+          <span className="testimonial-caption">A space reserved for genuine client words and approved names</span>
+        </div>
       </section>
 
       <section className="contact-section" id="contact" aria-labelledby="contact-title">
