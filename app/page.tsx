@@ -46,7 +46,7 @@ export default function Home() {
         </div>
         <div className="hero-visual">
           <div className="portrait-frame">
-            {/* Replace this temporary image with the owner's approved portrait before launch. */}
+            {/* Temporary stock portrait: replace with Success Daniel's approved portrait before launch. */}
             <img
               src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=85"
               alt="Temporary stock portrait placeholder; not Success Daniel"
@@ -136,7 +136,10 @@ export default function Home() {
         <p>Share your project details and preferred contact information, and we’ll add the right contact options here.</p>
         <span className="contact-note">Contact details to be added before launch.</span>
       </section>
-      <footer className="site-footer"><a className="brand" href="#home"><span className="brand-mark">SD.</span><span className="brand-copy"><strong>Success Daniel</strong><small>DESIGN · DIGITAL · STRATEGY</small></span></a><a href="#home">BACK TO TOP ↑</a></footer>
+      <footer className="site-footer">
+        <a className="brand" href="#home"><span className="brand-mark">SD.</span><span className="brand-copy"><strong>Success Daniel</strong><small>DESIGN · DIGITAL · STRATEGY</small></span></a>
+        <a href="#home">BACK TO TOP ↑</a>
+      </footer>
     </main>
   );
 }
