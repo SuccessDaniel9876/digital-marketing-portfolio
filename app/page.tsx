@@ -135,11 +135,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="simple-section simple-section-muted" id="about" aria-labelledby="about-title">
-        <p className="eyebrow"><span /> A LITTLE ABOUT ME</p>
-        <h2 id="about-title">Design with purpose<span>.</span></h2>
-        <p className="simple-lead">I’m Success Daniel, a website designer and digital creative focused on helping businesses present themselves clearly and confidently online.</p>
-        <p className="section-note">We can personalize this section with your story, experience, and the details you want visitors to know.</p>
+      <section className="about-section" id="about" aria-labelledby="about-title">
+        <div className="about-aside">
+          <p className="eyebrow"><span /> A LITTLE ABOUT ME</p>
+          <p className="about-aside-copy">Thoughtful design.<br />Clear communication.<br />Meaningful digital experiences.</p>
+          <span className="about-aside-index">SUCCESS DANIEL · ABOUT</span>
+        </div>
+        <div className="about-main">
+          <h2 id="about-title">Design with intent,<br /><em>not decoration.</em></h2>
+          <p className="about-lead">I’m Success Daniel, a website designer and digital creative. I help businesses build a confident online presence through considered website design and purposeful digital communication.</p>
+          <p className="about-detail">My approach is simple: understand the goal, make the message clear, and create an experience that feels right for the brand and its audience.</p>
+          <a className="about-link" href="#contact">LET’S TALK ABOUT YOUR PROJECT <span>↗</span></a>
+        </div>
       </section>
 
       <section className="simple-section" id="process" aria-labelledby="process-title">
