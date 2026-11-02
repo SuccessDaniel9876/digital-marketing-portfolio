@@ -99,13 +99,39 @@ export default function Home() {
         <p className="portfolio-disclaimer">These are concept previews, not completed client projects. We’ll replace them with your actual work, screenshots, and project links when you share those materials.</p>
       </section>
 
-      <section className="simple-section" id="services" aria-labelledby="services-title">
-        <p className="eyebrow"><span /> WHAT I CAN HELP WITH</p>
-        <h2 id="services-title">Creative services<span>.</span></h2>
-        <div className="simple-grid">
-          <article><span>01</span><h3>Website Design</h3><p>Wix websites, portfolio sites, and landing pages designed around your brand and goals.</p></article>
-          <article><span>02</span><h3>Social Media</h3><p>Social content planning, creative design, and account management.</p></article>
-          <article><span>03</span><h3>Digital Creative</h3><p>Visual storytelling and digital brand experiences that help businesses show up consistently.</p></article>
+      <section className="services-section" id="services" aria-labelledby="services-title">
+        <div className="services-heading">
+          <div>
+            <p className="eyebrow"><span /> SERVICES</p>
+            <h2 id="services-title">Wix websites, designed<br />around the business.</h2>
+          </div>
+          <p className="services-heading-note">A considered digital presence, built around your goals and the people you want to reach.</p>
+        </div>
+        <div className="services-list">
+          <details className="service-row">
+            <summary><span className="service-row-title">Wix Business Website Design</span><span className="service-plus" aria-hidden="true">+</span></summary>
+            <p>A custom Wix website that presents your business clearly, builds trust, and helps visitors take the next step.</p>
+          </details>
+          <details className="service-row">
+            <summary><span className="service-row-title">Wix Ecommerce Website Design</span><span className="service-plus" aria-hidden="true">+</span></summary>
+            <p>An online store experience with thoughtful product presentation and a straightforward shopping journey.</p>
+          </details>
+          <details className="service-row">
+            <summary><span className="service-row-title">Wix Booking Website Design</span><span className="service-plus" aria-hidden="true">+</span></summary>
+            <p>A service-focused website that makes it easy for customers to explore your offerings and book appointments.</p>
+          </details>
+          <details className="service-row">
+            <summary><span className="service-row-title">Wix Landing Page Design</span><span className="service-plus" aria-hidden="true">+</span></summary>
+            <p>A focused landing page designed around one offer, campaign, or conversion goal.</p>
+          </details>
+          <details className="service-row">
+            <summary><span className="service-row-title">Wix Website Redesign</span><span className="service-plus" aria-hidden="true">+</span></summary>
+            <p>A refreshed website with a clearer structure, more cohesive visuals, and a better user experience.</p>
+          </details>
+          <details className="service-row">
+            <summary><span className="service-row-title">Wix Website Optimisation</span><span className="service-plus" aria-hidden="true">+</span></summary>
+            <p>Practical refinements to layout, content, responsiveness, and user journeys to improve the overall site experience.</p>
+          </details>
         </div>
       </section>
 
