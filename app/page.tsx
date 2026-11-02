@@ -4,6 +4,7 @@ const navItems = [
   ["Services", "#services"],
   ["About", "#about"],
   ["Process", "#process"],
+  ["Testimonials", "#testimonials"],
   ["Contact", "#contact"],
 ];
 
@@ -18,13 +19,11 @@ export default function Home() {
             <small>DESIGN · DIGITAL · STRATEGY</small>
           </span>
         </a>
-
         <nav className="main-nav" aria-label="Main navigation">
           {navItems.map(([label, href]) => (
             <a key={label} href={href}>{label}</a>
           ))}
         </nav>
-
         <a className="header-cta" href="#contact">
           LET&apos;S WORK TOGETHER <span aria-hidden="true">↗</span>
         </a>
@@ -33,11 +32,7 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-copy">
           <p className="eyebrow"><span /> WEB DESIGNER & DIGITAL CREATIVE</p>
-          <h1 id="hero-title">
-            Your brand<br />
-            deserves to<br />
-            <em>stand out.</em>
-          </h1>
+          <h1 id="hero-title">Your brand<br />deserves to<br /><em>stand out.</em></h1>
           <p className="hero-description">
             I help businesses make a powerful first impression with thoughtful
             website design, engaging social media, and creative digital solutions
@@ -47,18 +42,14 @@ export default function Home() {
             <a className="button button-dark" href="#portfolio">EXPLORE MY WORK <span>↗</span></a>
             <a className="text-link" href="#contact">Let&apos;s talk <span>↗</span></a>
           </div>
-          <div className="hero-note">
-            <span className="note-line" />
-            <span>Creative ideas. Clear strategy. Digital impact.</span>
-          </div>
+          <div className="hero-note"><span className="note-line" /><span>Creative ideas. Clear strategy. Digital impact.</span></div>
         </div>
-
         <div className="hero-visual">
           <div className="portrait-frame">
-            {/* Temporary portrait placeholder — replace with your approved portrait image. */}
+            {/* Replace this temporary image with the owner's approved portrait before launch. */}
             <img
               src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=85"
-              alt="Temporary portrait placeholder"
+              alt="Temporary stock portrait placeholder; not Success Daniel"
             />
             <div className="portrait-label">
               <span>SUCCESS DANIEL · DIGITAL CREATIVE</span>
@@ -70,71 +61,82 @@ export default function Home() {
       </section>
 
       <div className="hero-bottomline">
-        <span>WEBSITE DESIGN</span>
-        <span>SOCIAL MEDIA MANAGEMENT</span>
-        <span>CREATIVE DIGITAL SOLUTIONS</span>
-        <span>DESIGNED TO MAKE AN IMPACT</span>
+        <span>WEBSITE DESIGN</span><span>SOCIAL MEDIA MANAGEMENT</span>
+        <span>CREATIVE DIGITAL SOLUTIONS</span><span>DESIGNED TO MAKE AN IMPACT</span>
       </div>
 
       <section className="portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
         <div className="portfolio-heading">
-          <div>
-            <p className="eyebrow"><span /> A LOOK AT WHAT I DO</p>
-            <h2 id="portfolio-title">Selected work<span>.</span></h2>
-          </div>
-          <p className="portfolio-intro">
-            Digital experiences designed to help brands look their best, tell their story,
-            and connect with the right audience.
-          </p>
+          <div><p className="eyebrow"><span /> A LOOK AT WHAT I DO</p><h2 id="portfolio-title">Selected work<span>.</span></h2></div>
+          <p className="portfolio-intro">Digital experiences designed to help brands look their best, tell their story, and connect with the right audience.</p>
         </div>
-
         <div className="portfolio-grid">
           <article className="portfolio-card portfolio-card-featured">
             <a className="portfolio-art portfolio-art-web" href="#contact" aria-label="Discuss a website design project">
               <div className="browser-frame">
                 <div className="browser-top"><span /><span /><span /><small>YOUR BRAND / WEBSITE</small></div>
-                <div className="browser-content">
-                  <span className="art-kicker">A DIGITAL FIRST IMPRESSION</span>
-                  <strong>Make your<br />brand matter.</strong>
-                  <span className="art-button">DISCOVER MORE ↗</span>
-                  <div className="art-shape" />
-                </div>
-              </div>
-              <span className="portfolio-art-index">01 — WEB DESIGN</span>
+                <div className="browser-content"><span className="art-kicker">A DIGITAL FIRST IMPRESSION</span><strong>Make your<br />brand matter.</strong><span className="art-button">DISCOVER MORE ↗</span><div className="art-shape" /></div>
+              </div><span className="portfolio-art-index">01 — WEB DESIGN · CONCEPT PREVIEW</span>
             </a>
-            <div className="portfolio-card-info">
-              <div><h3>Website Design</h3><p>Wix websites · Landing pages · Portfolio sites</p></div>
-              <a href="#contact" aria-label="Discuss website design">↗</a>
-            </div>
+            <div className="portfolio-card-info"><div><h3>Website Design</h3><p>Wix websites · Landing pages · Portfolio sites</p></div><a href="#contact" aria-label="Discuss website design">↗</a></div>
           </article>
-
           <article className="portfolio-card">
             <a className="portfolio-art portfolio-art-social" href="#contact" aria-label="Discuss a social media project">
               <div className="social-stack">
                 <div className="social-tile social-tile-one"><span>YOUR BRAND</span><strong>Show up<br />with purpose.</strong><small>CONTENT · COMMUNITY · GROWTH</small></div>
                 <div className="social-tile social-tile-two"><span>01 / SOCIAL</span><strong>Make<br />connections.</strong></div>
-              </div>
-              <span className="portfolio-art-index">02 — SOCIAL MEDIA</span>
+              </div><span className="portfolio-art-index">02 — SOCIAL MEDIA · CONCEPT PREVIEW</span>
             </a>
-            <div className="portfolio-card-info">
-              <div><h3>Social Media Creative</h3><p>Content planning · Creative direction</p></div>
-              <a href="#contact" aria-label="Discuss social media creative">↗</a>
-            </div>
+            <div className="portfolio-card-info"><div><h3>Social Media Creative</h3><p>Content planning · Creative direction</p></div><a href="#contact" aria-label="Discuss social media creative">↗</a></div>
           </article>
-
           <article className="portfolio-card">
             <a className="portfolio-art portfolio-art-brand" href="#contact" aria-label="Discuss a brand landing page">
-              <div className="brand-poster"><span>BRAND / 03</span><strong>Good ideas<br /><em>deserve</em><br />great design.</strong><small>CREATIVE DIGITAL EXPERIENCE</small><div className="brand-poster-circle" /></div>
-              <span className="portfolio-art-index">03 — DIGITAL BRAND</span>
+              <div className="brand-poster"><span>BRAND / 03</span><strong>Good ideas<br /><em>deserve</em><br />great design.</strong><small>CREATIVE DIGITAL EXPERIENCE</small><div className="brand-poster-circle" /></div><span className="portfolio-art-index">03 — DIGITAL BRAND · CONCEPT PREVIEW</span>
             </a>
-            <div className="portfolio-card-info">
-              <div><h3>Digital Brand Presence</h3><p>Brand storytelling · Visual consistency</p></div>
-              <a href="#contact" aria-label="Discuss digital brand presence">↗</a>
-            </div>
+            <div className="portfolio-card-info"><div><h3>Digital Brand Presence</h3><p>Brand storytelling · Visual consistency</p></div><a href="#contact" aria-label="Discuss digital brand presence">↗</a></div>
           </article>
         </div>
-        <p className="portfolio-disclaimer">These are illustrative project previews for the portfolio layout. We’ll replace them with your actual projects, screenshots, and links.</p>
+        <p className="portfolio-disclaimer">These are concept previews, not completed client projects. We’ll replace them with your actual work, screenshots, and project links when you share those materials.</p>
       </section>
+
+      <section className="simple-section" id="services" aria-labelledby="services-title">
+        <p className="eyebrow"><span /> WHAT I CAN HELP WITH</p>
+        <h2 id="services-title">Creative services<span>.</span></h2>
+        <div className="simple-grid">
+          <article><span>01</span><h3>Website Design</h3><p>Wix websites, portfolio sites, and landing pages designed around your brand and goals.</p></article>
+          <article><span>02</span><h3>Social Media</h3><p>Social content planning, creative design, and account management.</p></article>
+          <article><span>03</span><h3>Digital Creative</h3><p>Visual storytelling and digital brand experiences that help businesses show up consistently.</p></article>
+        </div>
+      </section>
+
+      <section className="simple-section simple-section-muted" id="about" aria-labelledby="about-title">
+        <p className="eyebrow"><span /> A LITTLE ABOUT ME</p>
+        <h2 id="about-title">Design with purpose<span>.</span></h2>
+        <p className="simple-lead">I’m Success Daniel, a website designer and digital creative focused on helping businesses present themselves clearly and confidently online.</p>
+        <p className="section-note">We can personalize this section with your story, experience, and the details you want visitors to know.</p>
+      </section>
+
+      <section className="simple-section" id="process" aria-labelledby="process-title">
+        <p className="eyebrow"><span /> HOW WE WORK</p><h2 id="process-title">A clear process<span>.</span></h2>
+        <div className="simple-grid process-grid">
+          <article><span>01</span><h3>Discover</h3><p>We discuss your goals, audience, needs, and vision.</p></article>
+          <article><span>02</span><h3>Design</h3><p>I develop a thoughtful creative direction and build the agreed deliverables.</p></article>
+          <article><span>03</span><h3>Refine & deliver</h3><p>We review the work, make agreed refinements, and prepare it for handoff or launch.</p></article>
+        </div>
+      </section>
+
+      <section className="simple-section simple-section-muted" id="testimonials" aria-labelledby="testimonials-title">
+        <p className="eyebrow"><span /> CLIENT FEEDBACK</p><h2 id="testimonials-title">Kind words<span>.</span></h2>
+        <p className="simple-lead">Real client testimonials will be featured here once you provide the approved feedback and client names.</p>
+        <p className="section-note">No testimonials or client endorsements have been invented.</p>
+      </section>
+
+      <section className="contact-section" id="contact" aria-labelledby="contact-title">
+        <p className="eyebrow"><span /> HAVE A PROJECT IN MIND?</p><h2 id="contact-title">Let’s make<br /><em>something great.</em></h2>
+        <p>Share your project details and preferred contact information, and we’ll add the right contact options here.</p>
+        <span className="contact-note">Contact details to be added before launch.</span>
+      </section>
+      <footer className="site-footer"><a className="brand" href="#home"><span className="brand-mark">SD.</span><span className="brand-copy"><strong>Success Daniel</strong><small>DESIGN · DIGITAL · STRATEGY</small></span></a><a href="#home">BACK TO TOP ↑</a></footer>
     </main>
   );
 }
