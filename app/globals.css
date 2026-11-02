@@ -181,3 +181,24 @@ h1 em { color: var(--accent); font-weight: 500; }
   .services-heading h2 { font-size: clamp(36px, 9vw, 52px); }
   .service-row-title { font-size: 16px; }
 }
+
+
+/* About section — split editorial layout */
+.about-section { display: grid; grid-template-columns: .78fr 1.22fr; min-height: 470px; background: #efede7; border-bottom: 1px solid var(--line); }
+.about-aside { position: relative; display: flex; flex-direction: column; justify-content: space-between; min-height: 470px; padding: 42px 9% 32px 7%; background: #252521; color: var(--paper); }
+.about-aside .eyebrow { color: #c7c1b7; }
+.about-aside-copy { margin: auto 0; font-family: "Playfair Display", serif; font-size: clamp(22px, 2.5vw, 34px); line-height: 1.2; letter-spacing: -.035em; }
+.about-aside-index { color: #aaa59b; font-size: 8px; letter-spacing: .14em; }
+.about-main { align-self: center; max-width: 760px; padding: 76px 10%; }
+.about-main h2 { margin: 0; font-family: "Playfair Display", serif; font-size: clamp(38px, 5vw, 66px); line-height: .99; font-weight: 500; letter-spacing: -.055em; }
+.about-main h2 em { color: var(--accent); font-weight: 500; }
+.about-lead { max-width: 520px; margin: 28px 0 0; color: #55524c; font-size: 14px; line-height: 1.85; }
+.about-detail { max-width: 500px; margin: 14px 0 0; color: var(--muted); font-size: 11px; line-height: 1.85; }
+.about-link { display: inline-flex; gap: 20px; align-items: center; margin-top: 28px; padding-bottom: 7px; border-bottom: 1px solid #aaa59c; font-size: 9px; letter-spacing: .09em; }
+@media (max-width: 760px) {
+  .about-section { grid-template-columns: 1fr; }
+  .about-aside { min-height: 250px; padding: 30px 5%; }
+  .about-aside-copy { margin: 28px 0; font-size: 27px; }
+  .about-main { padding: 58px 5% 64px; }
+  .about-main h2 { font-size: clamp(39px, 10vw, 56px); }
+}
