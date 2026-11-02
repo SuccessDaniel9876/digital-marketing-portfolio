@@ -72,3 +72,27 @@ footer{padding:28px 7.2%;display:flex;justify-content:space-between;font-size:11
 .contact-note{display:block;font-size:10px;line-height:1.7;color:#bdb5a9;margin-top:15px}
 footer{padding:28px 7.2%;display:flex;justify-content:space-between;font-size:11px;background:#24231f;color:#f5f1e9;border-top:1px solid #57534d}
 @media(max-width:760px){.contact-section{padding:75px 5%;grid-template-columns:1fr;gap:45px}.contact-section h2{font-size:52px}.contact-details{padding-left:20px}}
+
+/* Final responsive and accessibility polish */
+:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+nav a{transition:color .2s ease}
+nav a:hover{color:var(--ink)}
+@media(max-width:900px){
+  .site-header{height:auto;min-height:76px;padding:14px 4%;gap:12px;flex-wrap:wrap}
+  nav{gap:clamp(10px,2vw,18px);flex-wrap:wrap;justify-content:center}
+}
+@media(max-width:600px){
+  .site-header{padding:12px 5%}
+  nav{order:3;flex:1 0 100%;gap:8px 14px;justify-content:center}
+  nav a{font-size:10px;padding:7px 0}
+  .brand{font-size:30px}
+  .header-cta{font-size:11px;padding:10px 13px}
+  .hero{min-height:0;padding-bottom:95px}
+  .hero-index{bottom:25px}
+  .section-heading h2{letter-spacing:-1px}
+  footer{padding:22px 5%;gap:15px;flex-wrap:wrap}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
