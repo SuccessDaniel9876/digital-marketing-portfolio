@@ -149,12 +149,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="simple-section" id="process" aria-labelledby="process-title">
-        <p className="eyebrow"><span /> HOW WE WORK</p><h2 id="process-title">A clear process<span>.</span></h2>
-        <div className="simple-grid process-grid">
-          <article><span>01</span><h3>Discover</h3><p>We discuss your goals, audience, needs, and vision.</p></article>
-          <article><span>02</span><h3>Design</h3><p>I develop a thoughtful creative direction and build the agreed deliverables.</p></article>
-          <article><span>03</span><h3>Refine & deliver</h3><p>We review the work, make agreed refinements, and prepare it for handoff or launch.</p></article>
+      <section className="process-section" id="process" aria-labelledby="process-title">
+        <div className="process-heading">
+          <p className="eyebrow"><span /> HOW WE WORK</p>
+          <h2 id="process-title">Good work starts<br />with a <em>clear process.</em></h2>
+          <p>From the first conversation to the final handoff, every step has a purpose.</p>
+        </div>
+        <div className="process-steps">
+          <article className="process-step"><span className="process-number">01</span><div><h3>Discover</h3><p>We talk through your business, audience, goals, and the result you want to achieve.</p></div><span className="process-arrow">↗</span></article>
+          <article className="process-step"><span className="process-number">02</span><div><h3>Plan & create</h3><p>I shape the direction, organize the content, and create the agreed website or digital materials.</p></div><span className="process-arrow">↗</span></article>
+          <article className="process-step"><span className="process-number">03</span><div><h3>Review & deliver</h3><p>We review the work, make the agreed refinements, and prepare everything for launch or handoff.</p></div><span className="process-arrow">↗</span></article>
         </div>
       </section>
 
