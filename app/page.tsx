@@ -132,9 +132,17 @@ export default function Home() {
       </section>
 
       <section className="contact-section" id="contact" aria-labelledby="contact-title">
-        <p className="eyebrow"><span /> HAVE A PROJECT IN MIND?</p><h2 id="contact-title">Let’s make<br /><em>something great.</em></h2>
-        <p>Share your project details and preferred contact information, and we’ll add the right contact options here.</p>
-        <span className="contact-note">Contact details to be added before launch.</span>
+        <p className="eyebrow"><span /> HAVE A PROJECT IN MIND?</p>
+        <h2 id="contact-title">Let’s make<br /><em>something great.</em></h2>
+        <p>Have a project or collaboration in mind? Choose your preferred way to get in touch.</p>
+        <div className="contact-methods" aria-label="Contact methods">
+          <div className="contact-method"><span className="contact-method-number">01</span><div><strong>WhatsApp</strong><small>WhatsApp number to be added</small></div><span className="contact-method-action">DETAILS SOON</span></div>
+          <div className="contact-method"><span className="contact-method-number">02</span><div><strong>Email</strong><small>Email address to be added</small></div><span className="contact-method-action">DETAILS SOON</span></div>
+          <div className="contact-method"><span className="contact-method-number">03</span><div><strong>LINE</strong><small>LINE profile or link to be added</small></div><span className="contact-method-action">DETAILS SOON</span></div>
+          <div className="contact-method"><span className="contact-method-number">04</span><div><strong>Instagram</strong><small>Instagram profile to be added</small></div><span className="contact-method-action">DETAILS SOON</span></div>
+          <div className="contact-method"><span className="contact-method-number">05</span><div><strong>Call Phone</strong><small>Phone number to be added</small></div><span className="contact-method-action">DETAILS SOON</span></div>
+        </div>
+        <span className="contact-note">Contact links and numbers will be activated when you share your details.</span>
       </section>
       <footer className="site-footer">
         <a className="brand" href="#home"><span className="brand-mark">SD.</span><span className="brand-copy"><strong>Success Daniel</strong><small>DESIGN · DIGITAL · STRATEGY</small></span></a>
